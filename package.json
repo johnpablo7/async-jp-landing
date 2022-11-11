@@ -1,0 +1,23 @@
+{
+  "name": "async-jp-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnpablo7/async-jp-landing.git"
+  },
+  "keywords": [],
+  "author": "john",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnpablo7/async-jp-landing/issues"
+  },
+  "homepage": "https://github.com/johnpablo7/async-jp-landing#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.3"
+  }
+}
