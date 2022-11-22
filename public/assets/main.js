@@ -1,5 +1,5 @@
 const API =
-  "https://youtube-v31.p.rapidapi.com/search?channelId=UCcaYkWDw6A4_8awJgKGWeGA&part=snippet%2Cid&order=date&maxResults=9";
+  "https://youtube-v31.p.rapidapi.com/search?channelId=UC8tB-_a6YgSD9Os9rjLAJDA&part=snippet%2Cid&order=date&maxResults=50";
 
 const content = null || document.getElementById("content");
 
@@ -30,6 +30,7 @@ async function fetchData(urlApi) {
     ${videos.items
       .map(
         (video) => `
+      <a href="https://youtube.com/watch?v=${video.id.videoId}"target="_blank">
       <div class="group relative">
         <div
           class="w-full bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:aspect-none"
@@ -43,6 +44,7 @@ async function fetchData(urlApi) {
           </h3>
         </div>
       </div>
+      </a>
     `
       )
       .slice(0, 4)
@@ -50,6 +52,7 @@ async function fetchData(urlApi) {
     `;
     content.innerHTML = view;
   } catch (error) {
-    console.log("error");
+    // console.log(error);
+    Swal.fire("The Internet?", "That thing is still around?", "question");
   }
 })();
